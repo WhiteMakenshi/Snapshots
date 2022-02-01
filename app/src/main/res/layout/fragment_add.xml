@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/common_padding_default"
+    android:background="@color/white"
     tools:context=".AddFragment">
 
     <ProgressBar
@@ -22,7 +23,7 @@
         android:id="@+id/btnPost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Publicar"
+        android:text="@string/add_snapshot"
         android:layout_marginTop="@dimen/common_padding_min"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/progressBar"/>
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:text="@string/post_message_title"
         android:textAppearance="?attr/textAppearanceHeadline6"
+        android:paddingHorizontal="@dimen/common_padding_default"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btnPost"
         app:layout_constraintTop_toTopOf="@id/btnPost"
